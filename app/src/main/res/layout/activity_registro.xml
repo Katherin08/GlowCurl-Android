@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_claro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glow Curl"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa_principal"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blanco"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tus datos"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/rosa_principal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/edtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrarme"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:backgroundTint="@color/rosa_principal"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/btnVolverInicioRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volver al inicio"
+                android:textSize="15sp"
+                android:textColor="@color/rosa_principal"
+                android:backgroundTint="@color/rosa_suave"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

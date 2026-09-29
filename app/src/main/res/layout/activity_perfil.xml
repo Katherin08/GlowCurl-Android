@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_claro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenida a Glow Curl"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa_principal"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi perfil capilar"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona las características de tu cabello para obtener una recomendación personalizada."
+            android:textSize="15sp"
+            android:textColor="@color/texto"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blanco"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de cabello"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/rosa_principal"/>
+
+            <Spinner
+                android:id="@+id/spTipoCabello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problema principal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/rosa_principal"
+                android:layout_marginTop="22dp"/>
+
+            <Spinner
+                android:id="@+id/spProblema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Objetivo"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/rosa_principal"
+                android:layout_marginTop="22dp"/>
+
+            <Spinner
+                android:id="@+id/spObjetivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnRecomendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver recomendación"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:backgroundTint="@color/rosa_principal"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa_principal"
+            android:backgroundTint="@color/rosa_suave"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnVolverInicioPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al inicio"
+            android:textSize="15sp"
+            android:textColor="@color/rosa_principal"
+            android:backgroundTint="@color/blanco"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
